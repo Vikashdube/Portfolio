@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <title>Portfolio</title>
+</head>
+<body class="overflow-x-hidden bg-white">
+<!-- 
+        <div class="fixed top-0 right-0 w-full -z-20 translate-y-[-80%] py-2.5">
+            <img src="image/color-search-is-back-bg.jpg" alt="" class="w-full">
+        </div> -->
+
+
+
+    <nav class="w-full fixed bg-green-400 px-5  lg:px-8 xl:px-[8%]  flex items-center py-1 justify-between z-50 " >
+
+       <img src="image/vk_logo_icon_218919.webp" alt="logo" 
+        class="w-12 cursor-pointer mr-53" >
+         
+       <ul class="hidden md:flex items-center gap-11 lg:gap-8 rounded-full 
+                  px-12 py-3  shadow-sm bg-opacity-50">
+           <li><a href="#top">Home</a></li>
+           <li><a href="#about">About me</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#work">Work</a></li>
+           <li><a href="#contact">Contact me</a></li>
+       </ul>
+           
+         <div class="flex items-center gap-4">
+             <button><img src="image/moon.png" alt="" class="w-6"></button>
+
+             <a href="#contact"
+              class="hidden md:flex items-center gap-2 lg:gap-8 rounded-full 
+              px-5 py-3 bg-white shadow-sm bg-opacity-50" >
+              Contact <img src="image/uparrow.png" alt="" class="w-7" ></a>
+           
+             <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="image/menu.png" alt="" class="w-6">
+             </button>
+
+            </div>
+   <!-- Mobile menu ---------------- -->
+
+       <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 
+         bottom-0 w-64 z-50 h-screen bg-red-50 transition duration-500">
+
+         <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="image/cross.png" alt="" class="w-6 cursor-pointer ">
+         </div>
+
+
+        <li><a href="#top" onclick="closeMenu()">Home</a></li>
+           <li><a href="#about" onclick="closeMenu()">About me</a></li>
+           <li><a href="#services" onclick="closeMenu()">Services</a></li>
+           <li><a href="#work" onclick="closeMenu()">Work</a></li>
+           <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+       
+        </ul>
+
+        </nav>  
+ 
+
+<!-------- header ------------------------------->
+
+
+<div class=" w-11/12  max-w-3xl   text-center mx-auto h-auto flex flex-col items-center justify-center gap-3 ">
+
+    <img src="image/photo  pdf111.jpg" alt="" class="rounded-full w-40 h-40 mt-24 ">
+    
+    <h3 ><i>Hi! I'm Vikash Kumar 🫱🏻  </i></h3>
+    
+    
+        <h1 class="text-3xl sm:text-4xl lg:text-[66px] font-serif">Frontend and backend web developer</h1>
+    <p>I love to create beautiful and efficient websites</p>
+
+
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a href="#contact" 
+        class="px-8 py-2.5 border rounded-full bg-gradient-to-t from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2" >Contact me <img src="image/icons8-arrow-48.png" alt="" class="w-4"></a>
+    
+        <a href="image/vikash (2).pdf" download 
+        class="px-8 py-2.5 border rounded-full bg-green-200 border-gray-500 flex items-center gap-2 " >My Resume<img src="image/icons8-download-16.png" alt="" class="w-4"></a>
+    
+    </div>
+</div>
+
+
+<!-------------- About me ------------------- -->
+
+<div id="about" class="w-full px-[12%] py-5 h-auto font-serif ">
+     <div class="mt-14">
+    <h4 class="text-center mb-1 text-lg">Introduction</h4>
+     <h2 class="text-center text-5xl">About me</h2>
+    </div>
+
+     <div class="flex w-full flex-col lg:flex-row items-center gap-10 my-8">
+
+        <div class="max-w-max max-auto relative"><p>Hi! I'm Vikash Kumar, I am Skilled multitasker with superior work ethic and good teamwork, problem-
+            solving and organizational skills. Willing to take on any task to help team. Reliable and dedicated team player with hardworking and resourceful
+            approach.
+            </p></div>
+
+        <div>
+            <ul class="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-3xl ">
+                <li class="border-[0.5px] border-gray-400 rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                    <img src="image/icons8-code-48.png" alt="" class="w-7 mt-3">
+                    <h3 class="my-4 font-semibold text-gray-600">Language</h3>
+                    <p class="text-gray-500 text-sm">php, Javascript, Html, Css, React js, Java, Node js, Mysql, oops,DSA     </p>
+                   
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                    <img src="image/icons8-diploma-100.png" alt="" class="w-7 mt-3">
+                    <h3 class="my-4 font-semibold text-gray-600">Education</h3>
+                    <p class="text-gray-500 text-sm">Btech in Computer Science Engreening</p>
+                   
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                    <img src="image/icons8-project-50.png" alt="" class="w-7 mt-3">
+                    <h3 class="my-4 font-semibold text-gray-600">Projects</h3>
+                    <p class="text-gray-500 text-sm">Build more then 5 projects  </p>
+                   
+                </li>
+            </ul>
+
+      
+            <h4 class="my-5 text-gray-700">Tools i use </h4>
+             
+            <ul class="flex items-center gap-5 sm:gap-5 ">
+
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-500 rounded-lg cursor-pointer hover:-translate-y-1 duration-500  ">
+                    <img src="image/visual-studio-code-4096.png" alt="" class="w-5 sm:w-7">
+                </li>
+
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-500 rounded-lg cursor-pointer hover:-translate-y-1 duration-500  ">
+                    <img src="image/eclipse-logo-730x350.png" alt="" class="w-5 sm:w-14">
+                </li>
+
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-500 rounded-lg cursor-pointer hover:-translate-y-1 duration-500  ">
+                    <img src="image/NetBeans_Logo.png" alt="" class="w-5 sm:w-7">
+                </li>
+
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-500 rounded-lg cursor-pointer hover:-translate-y-1 duration-500  ">
+                    <img src="image/mysql-5-logo-png-transparent.png" alt="" class="w-5 sm:w-14">
+                </li>
+
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-500 rounded-lg cursor-pointer hover:-translate-y-1 duration-500  ">
+                    <img src="image/git-logo-11609362364wwhuzvtx5h.png" alt="" class="w-11 sm:w-10">
+                </li>
+
+            </ul>
+
+        </div>
+
+
+     </div>
+
+</div>
+
+
+<!--------------- services --------------------->
+
+<div id="services" class="w-full px-[12%] py-5 h-auto font-serif ">
+    <div class="mt-14">
+   
+    <h2 class="text-center text-3xl">My Services 🏣</h2>
+   </div>
+
+    <div class="flex w-full flex-col lg:flex-row items-center gap-10 my-8">
+
+       <div class="max-w-max max-auto relative"><p>Web design and development have been my bread and butter for more than 2 years. During that time I've discovered that I can help startups and companies with the following services
+           </p></div>
+
+       <div class="mt-[-15px]">
+           <ul class="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-3xl  ">
+
+               <li class="border-none rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                   <img src="image/icons8-web-48.png" alt="" class="w-7 mt-3">
+                   <h3 class="my-4 font-semibold text-gray-600">Web Design</h3>
+                   <p class="text-gray-500 text-sm">Successful online projects start with good design. It establishes a solid foundation for future development and allows for long term growth     </p>
+                  
+               </li>
+
+               <li class="border-none rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                   <img src="image/icons8-development-64.png" alt="" class="w-7 mt-3">
+                   <h3 class="my-4 font-semibold text-gray-600">DEVELOPMENT</h3>
+                   <p class="text-gray-500 text-sm">I can code my own designs or even use the customer's design as base. My focus is to generate clean code that's well structured for reliability</p>
+                  
+               </li>
+
+               <li class="border-none rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                   <img src="image/icons8-pc-48.png" alt="" class="w-7 mt-3">
+                   <h3 class="my-4 font-semibold text-gray-600">BASIC SEO</h3>
+                   <p class="text-gray-500 text-sm">i can setup your project to use basic SEO principles which will push your project to the first page on search engines and save you ads money  </p>
+                  
+               </li>
+           </ul>
+
+       </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!------------------ My work  ------------------>
+
+
+<div id="work" class="w-full px-[8%] py-5 h-auto font-serif ">
+    <div class="mt-14">
+   
+       <h2 class="text-center text-3xl">My Projects</h2>
+   </div>
+
+    
+      <p class="text-center max-w-5xl mx-[8] mt-5 mb-5">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development , these all project create for improver our knowlage  </p>
+
+      <!-- -----------div -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 ">
+
+
+            <div>
+              <div class="aspect-square bg-[url('./image/bank1.avif')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer mt-4 hover:bg-[#d6afe3] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"> </div>  
+              <h1 class=" text-1xl mt-2">Automated teller machine</h1>
+              <p class="text-gray-600">Using Java , Mysql , Springboot , Html , Css and More...</p>
+              <button class="text-green-400">learn more</button>
+            </div>
+
+
+            <div>
+                <div class="aspect-square bg-[url('./image/shop1.avif')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer mt-4 hover:bg-[#d6afe3] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"> </div>  
+                <h1 class=" text-1xl mt-2">Ecommerce Website</h1>
+                <p class="text-gray-600">Using Java , Mysql , Springboot , Html , Css and More...</p>
+                <button class="text-green-400">learn more</button>
+              </div>
+
+
+              <div>
+                <div class="aspect-square bg-[url('./image/eco1.avif')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer mt-4 hover:bg-[#d6afe3] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"> </div>  
+                <h1 class=" text-1xl mt-2">Sundown Studio</h1>
+                <p class="text-gray-600">Using  Html , Css and Javascript</p>
+                <h6 class="text-gray-400">its full service creative agency specializing in experiential marketing...</h6>
+                <a class=" text-green-600" href="https://vikashdube.github.io/Sundown-Studio/">Link...</a>
+                
+              </div>
+
+
+              <div>
+                <div class="aspect-square bg-[url('./image/two1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer mt-4 hover:bg-[#d6afe3] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"> </div>  
+                <h1 class=" text-1xl mt-2">Two good co.</h1>
+                <p class="text-gray-600">Using  Html , Css and Javascript</p>
+                <h6 class="text-gray-400"> until they believe in themselves again. Everything we do is designed to rebuild self worth and independence,...</h6>
+                <a class=" text-green-600" href="https://vikashdube.github.io/Two-good-co-/">Link...</a>
+                
+              </div>
+
+              <div>
+                <div class="aspect-square bg-[url('./image/fanta.avif')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer mt-4 hover:bg-[#d6afe3] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"> </div>  
+                <h1 class=" text-1xl mt-2">FANTA</h1>
+                <p class="text-gray-600">Using  Html , Css and Javascript</p>
+                <h6 class="text-gray-400"> Creating Website with Scroll Animation using GSAP & Scroll Trigger ...</h6>
+                <a class=" text-green-600" href="https://vikashdube.github.io/Fanta/">Link...</a>
+                
+              </div>
+
+
+              <div>
+                <div class="aspect-square bg-[url('./image/note.avif')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer mt-4 hover:bg-[#d6afe3] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"> </div>  
+                <h1 class=" text-1xl mt-2">To-Do List(NotePaid)</h1>
+                <p class="text-gray-600">Using  Html , Css and Javascript</p>
+                <h6 class="text-gray-400"> We can perform all activity like Read and write  ...</h6>
+                <a class=" text-green-600" href="https://vikashdube.github.io/To-Do-List/">Link...</a>
+                
+              </div>
+              
+
+
+              
+
+              
+
+              
+
+              
+
+
+
+
+
+        </div>
+
+
+        
+
+
+
+</div>
+
+
+<!---------------------------------- Contact me ----------------->
+<div id="contact">
+
+<div  class=" flex items-center justify-center min-h-screen">
+ 
+
+<div class="w-full max-w-4xl  rounded-lg  ">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center ">Contact Us</h2>
+    <p class="text-center max-w-2xl mx-auto  mb-5">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="text-green-500" href="https://accounts.google.com/v3/signin/identifier?ifkv=Ab5oB3rBNHnGdw5eItOEeTVw1tO0rYWfjxbZCoWMjjxu9FDAFoQxXHQvFTxRG_ClKhMLVv0HjbltTg&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1">vikas845301@gmail.com </a> </p>
+
+
+
+
+
+    <form action="https://api.web3forms.com/submit" method="post" >
+
+        <input type="hidden" name="access_key" value="4271bce2-ce0e-4134-a475-c8563a1bb929">
+
+
+        <div class="  mb-4">    
+            <input id="name" type="text" name="name" placeholder="Your Name" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" required>
+        </div>
+
+
+        <div class="mb-4">
+            <input id="email" type="email" name="email" placeholder="Your Email" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" required>
+        </div>
+
+        <div class="mb-4">
+        
+            <textarea id="details" rows="5" name="message" placeholder="Describe your project" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" required></textarea>
+        </div>
+        <div class="text-center">
+            <button type="submit"  class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Submit</button>
+        </div>
+    </form>
+
+
+
+
+
+<!---------------------- footer---------------- -->
+
+<div class="mt-5">
+
+    <div class="text-center sm:flex items-center justify-between border-t border-red-500 my-12 py-6">
+        <p>Copyright © Vikash Kumar</p>
+   
+        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+            <li ><a href="https://www.linkedin.com/feed/">Linkedin</a></li>
+            <li><a href="https://github.com/Vikashdube">github</a></li>
+            <li><a href="https://leetcode.com/problemset/">Leetcode</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
